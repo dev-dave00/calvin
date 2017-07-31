@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <input type="text" id="msg"><button id="btn" onclick="sendData()">send</button>
+    <div id="ibx"></div>
+    
+    
+    <script src="firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAv1zN1xlqaCSEbeoR_pOCUAWljnet6Kv4",
+        authDomain: "test-app-fd25a.firebaseapp.com",
+        databaseURL: "https://test-app-fd25a.firebaseio.com",
+        projectId: "test-app-fd25a",
+        storageBucket: "",
+        messagingSenderId: "601796274515"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
